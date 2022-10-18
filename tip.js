@@ -1,7 +1,7 @@
 function calculateTip() {
-  var billAmt = document.getElementById("billAmt").value;
-  var serviceQual = document.getElementById("serviceQual").value;
-  var numOfPeople = document.getElementById("peopleAmt").value;
+  let billAmt = document.getElementById("billAmt").value;
+  let serviceQual = document.getElementById("serviceQual").value;
+  let numOfPeople = document.getElementById("peopleAmt").value;
 
   // validate input
   if (billAmt === "" || serviceQual == 0) {
@@ -17,7 +17,7 @@ function calculateTip() {
   }
 
   //calculate tip
-  var total = (billAmt * serviceQual) / numOfPeople;
+  let total = (billAmt * serviceQual) / numOfPeople;
   //round to two decimal places
   total = Math.round(total);
   //Display the tip

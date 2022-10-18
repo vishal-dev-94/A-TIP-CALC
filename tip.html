@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/tip.css" />
   </head>
   <body>
+    <h1>A Tip calculator</h1>
     <div id="container">
-      <h1>Tip Calculator</h1>
       <div id="calculator">
         <form action="">
           <p>How much was your bill?</p>
-
-          Rs. <input type="text" placeholder="Bill Amount" id="billAmt" />
+          <bold for=""> <strong>Rs.</strong></label>
+          <input type="text" placeholder="Bill Amount" id="billAmt" />
           <p>How was your service?</p>
           <select id="serviceQual">
             <option disabled selected value="0">--Choose an option--</option>
@@ -25,12 +25,12 @@
         </form>
         <p>How many people are sharing the bill</p>
         <input type="number" placeholder="Number of People" id="peopleAmt" />
-        People
+       <span>People</span> 
         <button type="button" id="calculate">Calculate</button>
       </div>
       <!-- calculator end -->
       <div id="totalTip">
-        <sup>Rs. </sup>
+        <sup>Rs.</sup>
         <span id="tip">0.00</span>
         <small id="each">each</small>
       </div>
